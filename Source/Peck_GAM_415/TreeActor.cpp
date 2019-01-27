@@ -20,8 +20,13 @@ ATreeActor::ATreeActor() :m_wholeTextureRegion(0, 0, 0, 0, m_textureSize, m_text
 
 	//Call and create the static meshes - There is an example BP in the testObject Folder
 	m_rootBase = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RootBase"));
+
 	RootComponent = m_rootBase;
 	m_treeBase = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TreeBase"));
+
+	//I can't seem to set the relative transform to FVector(0,0,0), but all the objects spawn
+	m_treeBase->ResetRelativeTransform();
+	m_treeBase->SetRelativeLocation(FVector(0, 0, 0), false, nullptr, ETeleportType::None);
 	m_tree_1 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree_One"));
 	m_tree_2 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree_Two"));
 	m_treeTop = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TreeTop"));
@@ -35,10 +40,10 @@ ATreeActor::ATreeActor() :m_wholeTextureRegion(0, 0, 0, 0, m_textureSize, m_text
 	/*Dealing with these other components seem to also crash the game, so in the meantime I will leave
 	* them commented out*/
 
-	//static ConstructorHelpers::FObjectFinder <UStaticMesh> cone(TEXT("/Engine/BasicShapes/Cone"));
-	//m_tree_1->SetStaticMesh(cone.Object);
-	//m_tree_2->SetStaticMesh(cone.Object);
-	//m_treeTop->SetStaticMesh(cone.Object);
+	static ConstructorHelpers::FObjectFinder <UStaticMesh> asset(TEXT("/Engine/BasicShapes/Cone.Cone"));
+	m_tree_1->SetStaticMesh(asset.Object);
+	m_tree_2->SetStaticMesh(asset.Object);
+	m_treeTop->SetStaticMesh(asset.Object);
 
 	/*Until I get a material ready, this will remain commented out to avoid crashes
 	 *which now seems to work without crashing, but still doesn't create the object*/

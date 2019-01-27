@@ -40,15 +40,15 @@ private:
 	//Fog texture size
 	static const int m_textureSize = 512;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* m_rootBase;
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* m_treeBase;
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* m_tree_1;
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* m_tree_2;
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* m_treeTop;
 	UPROPERTY()
 		UTexture2D* m_dynamicTexture;

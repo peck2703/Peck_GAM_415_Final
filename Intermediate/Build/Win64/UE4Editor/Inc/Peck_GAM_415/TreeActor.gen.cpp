@@ -64,39 +64,44 @@ void EmptyLinkFunctionForGeneratedCodeTreeActor() {}
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_dynamicTexture = { UE4CodeGen_Private::EPropertyClass::Object, "m_dynamicTexture", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000000000, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_dynamicTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(NewProp_m_dynamicTexture_MetaData, ARRAY_COUNT(NewProp_m_dynamicTexture_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_treeTop_MetaData[] = {
+				{ "Category", "TreeActor" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "TreeActor.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_treeTop = { UE4CodeGen_Private::EPropertyClass::Object, "m_treeTop", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_treeTop), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_treeTop_MetaData, ARRAY_COUNT(NewProp_m_treeTop_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_treeTop = { UE4CodeGen_Private::EPropertyClass::Object, "m_treeTop", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_treeTop), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_treeTop_MetaData, ARRAY_COUNT(NewProp_m_treeTop_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_tree_2_MetaData[] = {
+				{ "Category", "TreeActor" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "TreeActor.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_tree_2 = { UE4CodeGen_Private::EPropertyClass::Object, "m_tree_2", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_tree_2), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_tree_2_MetaData, ARRAY_COUNT(NewProp_m_tree_2_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_tree_2 = { UE4CodeGen_Private::EPropertyClass::Object, "m_tree_2", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_tree_2), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_tree_2_MetaData, ARRAY_COUNT(NewProp_m_tree_2_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_tree_1_MetaData[] = {
+				{ "Category", "TreeActor" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "TreeActor.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_tree_1 = { UE4CodeGen_Private::EPropertyClass::Object, "m_tree_1", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_tree_1), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_tree_1_MetaData, ARRAY_COUNT(NewProp_m_tree_1_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_tree_1 = { UE4CodeGen_Private::EPropertyClass::Object, "m_tree_1", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_tree_1), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_tree_1_MetaData, ARRAY_COUNT(NewProp_m_tree_1_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_treeBase_MetaData[] = {
+				{ "Category", "TreeActor" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "TreeActor.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_treeBase = { UE4CodeGen_Private::EPropertyClass::Object, "m_treeBase", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_treeBase), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_treeBase_MetaData, ARRAY_COUNT(NewProp_m_treeBase_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_treeBase = { UE4CodeGen_Private::EPropertyClass::Object, "m_treeBase", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_treeBase), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_treeBase_MetaData, ARRAY_COUNT(NewProp_m_treeBase_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_rootBase_MetaData[] = {
+				{ "Category", "TreeActor" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "TreeActor.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_rootBase = { UE4CodeGen_Private::EPropertyClass::Object, "m_rootBase", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_rootBase), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_rootBase_MetaData, ARRAY_COUNT(NewProp_m_rootBase_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_rootBase = { UE4CodeGen_Private::EPropertyClass::Object, "m_rootBase", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(ATreeActor, m_rootBase), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_rootBase_MetaData, ARRAY_COUNT(NewProp_m_rootBase_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_dynamicMaterialInstance,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_dynamicMaterial,
@@ -125,7 +130,7 @@ void EmptyLinkFunctionForGeneratedCodeTreeActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATreeActor, 1697810569);
+	IMPLEMENT_CLASS(ATreeActor, 2958115505);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATreeActor(Z_Construct_UClass_ATreeActor, &ATreeActor::StaticClass, TEXT("/Script/Peck_GAM_415"), TEXT("ATreeActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATreeActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
