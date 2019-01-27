@@ -1,0 +1,7 @@
+D:\School_Documents\GAM_415\Peck_GAM_415\Source\Peck_GAM_415\Peck_GAM_415.Build.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader\ComputeShader.Build.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader\PixelShader.Build.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\RuntimeMeshComponent.Build.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\RuntimeMeshComponentEditor.Build.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Source\Peck_GAM_415.Target.cs
+D:\School_Documents\GAM_415\Peck_GAM_415\Source\Peck_GAM_415Editor.Target.cs
