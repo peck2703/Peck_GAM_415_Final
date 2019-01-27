@@ -31,7 +31,7 @@ public:
 	void SetSize(float);
 
 	//reveal a portion of fog
-	void RevealSmoothCircle(const FVector2D &pos, float radius);
+	void RevealSmoothCircle(const FVector2D &pos, float radius);;
 
 private:
 	void UpdateTextureRegions(UTexture2D* Texture, int32 MidIndex, uint32 NumRegions, FUpdateTextureRegion2D* Regions, uint32 SrcPitch, uint32 SrcBpp, uint8* SrcData, bool bFreeData);
