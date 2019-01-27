@@ -8,6 +8,6 @@ public class Peck_GAM_415 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "ProceduralMeshComponent", "RuntimeMeshComponent" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay","PixelShader", "ComputeShader", "RHI", "RenderCore", "ProceduralMeshComponent", "RuntimeMeshComponent" });
 	}
 }

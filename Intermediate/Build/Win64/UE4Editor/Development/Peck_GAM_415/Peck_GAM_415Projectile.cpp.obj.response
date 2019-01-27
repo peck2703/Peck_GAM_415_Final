@@ -356,6 +356,12 @@
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\AudioMixer\Public\DSP
 /I D:\ProgramFiles\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\AudioMixer
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader\Public
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader\Public
+/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent

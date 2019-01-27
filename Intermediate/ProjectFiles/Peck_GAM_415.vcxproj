@@ -630,6 +630,8 @@
 		<ClInclude Include="..\..\Source\Peck_GAM_415\Cube_ProcMesh.h" />
 		<ClCompile Include="..\..\Source\Peck_GAM_415\Cube_RunMesh.cpp" />
 		<ClInclude Include="..\..\Source\Peck_GAM_415\Cube_RunMesh.h" />
+		<ClCompile Include="..\..\Source\Peck_GAM_415\FogActor.cpp" />
+		<ClInclude Include="..\..\Source\Peck_GAM_415\FogActor.h" />
 		<ClCompile Include="..\..\Source\Peck_GAM_415\Module_One_Actor.cpp" />
 		<ClInclude Include="..\..\Source\Peck_GAM_415\Module_One_Actor.h" />
 		<None Include="..\..\Source\Peck_GAM_415\Peck_GAM_415.Build.cs" />

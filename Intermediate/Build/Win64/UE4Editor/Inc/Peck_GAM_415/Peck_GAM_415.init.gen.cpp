@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Peck_GAM_415",
 				PKG_CompiledIn | 0x00000000,
-				0x1CF46356,
-				0x147CF53D,
+				0xC5519755,
+				0x0FB4E135,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
