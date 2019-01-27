@@ -9,8 +9,8 @@
 #include "Components/InstancedStaticMeshComponent.h"
 #include "TreeActor.generated.h"
 
-	UCLASS()
-	class PECK_GAM_415_API ATreeActor : public AActor
+UCLASS()
+class PECK_GAM_415_API ATreeActor : public AActor
 {
 	GENERATED_BODY()
 
