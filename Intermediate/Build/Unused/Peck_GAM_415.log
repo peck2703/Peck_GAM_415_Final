@@ -1,131 +1,29 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for hot reloading Peck_GAM_415Editor (changes to module files)
+  Creating makefile for hot reloading Peck_GAM_415Editor (modules to compile have changed)
 EXEC : warning : D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\RuntimeMeshComponent.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
 EXEC : warning : D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\RuntimeMeshComponentEditor.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
   Compiling game modules for hot reload
   Parsing headers for Peck_GAM_415Editor
     Running UnrealHeaderTool "D:\School_Documents\GAM_415\Peck_GAM_415\Peck_GAM_415.uproject" "D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\Peck_GAM_415Editor\Development\Peck_GAM_415Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for Peck_GAM_415Editor in 6.5138789 seconds
-  Performing 28 actions (4 in parallel)
-  Peck_GAM_415Projectile.cpp
-  Cube_ProcMesh.gen.cpp
-  Trapezoid.cpp
-  Peck_GAM_415Projectile.gen.cpp
-  FogActor.gen.cpp
-  Cube_RunMesh.gen.cpp
-  Peck_GAM_415Character.gen.cpp
-  Peck_GAM_415.init.gen.cpp
-  Trapezoid.gen.cpp
-  Peck_GAM_415HUD.cpp
-  Peck_GAM_415GameMode.gen.cpp
-  Peck_GAM_415HUD.gen.cpp
-  Peck_GAM_415GameMode.cpp
-  Module_One_Actor.gen.cpp
-  Cube_RunMesh.cpp
-  Peck_GAM_415.cpp
-  Peck_GAM_415Character.cpp
-  Cube_ProcMesh.cpp
+  Reflection code generated for Peck_GAM_415Editor in 6.7481058 seconds
+  Performing 10 actions (4 in parallel)
+  [3/10] Link UE4Editor-ComputeShader-7763.dll
+  [4/10] Link UE4Editor-PixelShader-5361.dll
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-5361.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-5361.suppressed.exp
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-7763.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-7763.suppressed.exp
   FogActor.cpp
-  [21/28] Link UE4Editor-ComputeShader-1485.dll
-  Module_One_Actor.cpp
-  [22/28] Link UE4Editor-PixelShader-2961.dll
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-1485.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-1485.suppressed.exp
-  [23/28] Link UE4Editor-RuntimeMeshComponent-2961.dll
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2961.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2961.suppressed.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2961.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2961.suppressed.exp
-  [24/28] Link UE4Editor-ComputeShader-1485.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-1485.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-1485.exp
-  [25/28] Link UE4Editor-PixelShader-2961.lib
-  [26/28] Link UE4Editor-RuntimeMeshComponent-2961.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2961.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2961.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2961.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2961.exp
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshCore.h(362): warning C4265: 'FRuntimeMeshVertexTypeInfo': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1247): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1247): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexSimple': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1250): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1250): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexDualUV': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1253): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1253): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPosition': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1256): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1256): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionDualUV': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1259): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1259): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1262): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1262): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexDualUVHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1265): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1265): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1268): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1268): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionDualUVHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshCore.h(362): warning C4265: 'FRuntimeMeshVertexTypeInfo': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1247): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1247): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexSimple': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1250): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1250): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexDualUV': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1253): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1253): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPosition': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1256): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::Default,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1256): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionDualUV': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1259): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1259): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1262): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<true,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1262): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexDualUVHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1265): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,1,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1265): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(551): warning C4265: 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1268): note: see reference to class template instantiation 'FRuntimeMeshVertexTypeInfo_GenericVertex<false,true,true,true,2,ERuntimeMeshVertexTangentBasisType::HighPrecision,ERuntimeMeshVertexUVType::HighPrecision>' being compiled
-d:\school_documents\gam_415\peck_gam_415\plugins\runtimemeshcomponent\source\runtimemeshcomponent\public\RuntimeMeshGenericVertex.h(1268): warning C4265: 'FRuntimeMeshVertexTypeInfo_FRuntimeMeshVertexNoPositionDualUVHiPrecisionNormals': class has virtual functions, but destructor is not virtual
-           instances of this class may not be destructed correctly
-  [27/28] Link UE4Editor-Peck_GAM_415-2961.dll
-  [28/28] Link UE4Editor-Peck_GAM_415-2961.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2961.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2961.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2961.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2961.suppressed.exp
+  FogActor.gen.cpp
+  [5/10] Link UE4Editor-RuntimeMeshComponent-5361.dll
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-5361.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-5361.suppressed.exp
+  [6/10] Link UE4Editor-ComputeShader-7763.lib
+  [7/10] Link UE4Editor-PixelShader-5361.lib
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-7763.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-7763.exp
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-5361.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-5361.exp
+  [8/10] Link UE4Editor-RuntimeMeshComponent-5361.lib
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-5361.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-5361.exp
+  [9/10] Link UE4Editor-Peck_GAM_415-5361.dll
+  [10/10] Link UE4Editor-Peck_GAM_415-5361.lib
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-5361.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-5361.exp
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-5361.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-5361.suppressed.exp
   Deploying Peck_GAM_415Editor Win64 Development...
-  Total build time: 26.32 seconds (Local executor: 15.81 seconds)
+  Total build time: 20.50 seconds (Local executor: 9.48 seconds)

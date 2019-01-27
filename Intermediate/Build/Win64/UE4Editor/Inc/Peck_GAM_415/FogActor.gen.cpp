@@ -17,6 +17,10 @@ void EmptyLinkFunctionForGeneratedCodeFogActor() {}
 	PECK_GAM_415_API UClass* Z_Construct_UClass_AFogActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Peck_GAM_415();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void AFogActor::StaticRegisterNativesAFogActor()
 	{
@@ -40,6 +44,37 @@ void EmptyLinkFunctionForGeneratedCodeFogActor() {}
 				{ "ModuleRelativePath", "FogActor.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_dynamicMaterialInstance_MetaData[] = {
+				{ "ModuleRelativePath", "FogActor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_dynamicMaterialInstance = { UE4CodeGen_Private::EPropertyClass::Object, "m_dynamicMaterialInstance", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFogActor, m_dynamicMaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(NewProp_m_dynamicMaterialInstance_MetaData, ARRAY_COUNT(NewProp_m_dynamicMaterialInstance_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_dynamicMaterial_MetaData[] = {
+				{ "ModuleRelativePath", "FogActor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_dynamicMaterial = { UE4CodeGen_Private::EPropertyClass::Object, "m_dynamicMaterial", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFogActor, m_dynamicMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(NewProp_m_dynamicMaterial_MetaData, ARRAY_COUNT(NewProp_m_dynamicMaterial_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_dynamicTexture_MetaData[] = {
+				{ "ModuleRelativePath", "FogActor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_dynamicTexture = { UE4CodeGen_Private::EPropertyClass::Object, "m_dynamicTexture", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000000000, 1, nullptr, STRUCT_OFFSET(AFogActor, m_dynamicTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(NewProp_m_dynamicTexture_MetaData, ARRAY_COUNT(NewProp_m_dynamicTexture_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_squarePlane_MetaData[] = {
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "FogActor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_m_squarePlane = { UE4CodeGen_Private::EPropertyClass::Object, "m_squarePlane", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(AFogActor, m_squarePlane), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_m_squarePlane_MetaData, ARRAY_COUNT(NewProp_m_squarePlane_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_dynamicMaterialInstance,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_dynamicMaterial,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_dynamicTexture,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_m_squarePlane,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<AFogActor>::IsAbstract,
 			};
@@ -48,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeFogActor() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
 				nullptr, 0,
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -58,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeFogActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFogActor, 3056209734);
+	IMPLEMENT_CLASS(AFogActor, 459636458);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFogActor(Z_Construct_UClass_AFogActor, &AFogActor::StaticClass, TEXT("/Script/Peck_GAM_415"), TEXT("AFogActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFogActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
