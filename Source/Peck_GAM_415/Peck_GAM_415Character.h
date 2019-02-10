@@ -2,13 +2,16 @@
 
 #pragma once
 
+#include "Engine.h"
+#include "PixelShaderUsageExample.h"
+#include "ComputeShaderUsageExample.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Peck_GAM_415Character.generated.h"
 
 class UInputComponent;
 
-UCLASS(config=Game)
+UCLASS()
 class APeck_GAM_415Character : public ACharacter
 {
 	GENERATED_BODY()
@@ -80,8 +83,23 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		FColor PixelShaderTopLeftColor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		float ComputeShaderSimulationSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		UMaterialInterface * MaterialToApplyToClickedObject;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		UTextureRenderTarget2D * RenderTarget;
+
 protected:
 	
+	virtual void BeginDestroy() override;
+	virtual void Tick(float DeltaSeconds) override;
+
 	/** Fires a projectile. */
 	void OnFire();
 
@@ -137,6 +155,18 @@ public:
 	FORCEINLINE class USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+
+private:
+	FPixelShaderUsageExample * PixelShading;
+	FComputeShaderUsageExample * ComputeShading;
+	float EndColorBuildup;
+	float EndColorBuildupDirection;
+	float ComputeShaderBlendScalar;
+	float ComputeShaderBlend;
+	float TotalElapsedTime;
+	void ModifyComputeShaderBlend(float NewScalar);
+	void SavePixelShaderOutput();
+	void SaveComputeShaderOutput();
 
 };
 
