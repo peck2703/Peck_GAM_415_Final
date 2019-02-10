@@ -1,8 +1,10 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #pragma once
-
+#include "Engine.h"
 #include "CoreMinimal.h"
+#include "PixelShaderUsageExample.h"
+#include "ComputeShaderUsageExample.h"
 #include "GameFramework/Character.h"
 #include "Peck_GAM_415Character.generated.h"
 
@@ -51,6 +53,7 @@ public:
 protected:
 	virtual void BeginPlay();
 
+
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -79,6 +82,19 @@ public:
 	/** Whether to use motion controller location for aiming. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		FColor PixelShaderTopLeftColor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		float ComputeShaderSimulationSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		UMaterialInterface* MaterialToApplyToClickedObject;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+		UTextureRenderTarget2D* RenderTarget;
 
 protected:
 	
@@ -119,6 +135,9 @@ protected:
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
 	TouchData	TouchItem;
 	
+	virtual void BeginDestroy() override;
+	virtual void Tick(float DeltaSeconds) override;
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
@@ -138,5 +157,16 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
-};
+private:
+	FPixelShaderUsageExample* PixelShading;
+	FComputeShaderUsageExample* ComputeShading;
+	float EndColorBuildup;
+	float EndColorBuildupDirection;
+	float ComputeShaderBlendScalar;
+	float ComputeShaderBlend;
+	float TotalElapsedTime;
+	void ModifyComputeShaderBlend(float NewScalar);
+	void SavePixelShaderOutput();
+	void SaveComputeShaderOutput();
 
+};
