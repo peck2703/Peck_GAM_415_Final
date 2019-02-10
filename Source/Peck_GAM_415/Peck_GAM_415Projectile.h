@@ -4,8 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Engine/DecalActor.h"
-#include "Components/DecalComponent.h"
 #include "Peck_GAM_415Projectile.generated.h"
 
 UCLASS(config=Game)
@@ -21,17 +19,12 @@ class APeck_GAM_415Projectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
 
-	UPROPERTY(VisibleAnywhere, EditAnywhere, BlueprintReadWrite, Category = "Paintball")
-		ADecalActor* DecalToAdd;
-
 public:
 	APeck_GAM_415Projectile();
 
-	/** called when projectile hits something
-	I want to try calling the plugin by blueprint
+	/** called when projectile hits something */
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-	*/
 
 	/** Returns CollisionComp subobject **/
 	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }

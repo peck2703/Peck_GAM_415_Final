@@ -4,8 +4,6 @@
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Components/MeshComponent.h"
-#include "Engine/DecalActor.h"
-#include "Components/DecalComponent.h"
 #include "Peck_PluginBPLibrary.generated.h"
 
 /* 
@@ -29,27 +27,27 @@ UCLASS()
 class UPeck_PluginBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
-	
-	/** Sphere collision component */
-	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
-		class USphereComponent* CollisionComp;
 
-	/** Projectile movement component */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
-		class UProjectileMovementComponent* ProjectileMovement;
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "Peck_Plugin sample test testing"), Category = "Peck_PluginTesting")
+	static float Peck_PluginSampleFunction(float Parameter);
 
-	UPROPERTY(VisibleAnywhere, EditAnywhere, BlueprintReadWrite, Category = "Paintball")
-		ADecalActor* DecalToAdd;
-
-public:
-
-	/** called when projectile hits something */
-	UFUNCTION()
-		void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
-
-	/** Returns CollisionComp subobject **/
-	FORCEINLINE class USphereComponent* GetCollisionComp() const { return CollisionComp; }
-	/** Returns ProjectileMovement subobject **/
-	FORCEINLINE class UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
-	UPeck_PluginBPLibrary(const FObjectInitializer & ObjectInitializer);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName ="Apply Selected Material", Keywords = "Peck_Plugin sample test testing"), Category = "Peck_PluginTesting")
+		static void ApplyMaterial(
+			UStaticMesh* Mesh,
+			UMaterial* Material,
+			FVector Color,
+			float UV1,
+			float UV2,
+			float Roughness,
+			float Metallic);
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Apply Selected Material", Keywords = "Peck_Plugin sample test testing"), Category = "Peck_PluginTesting")
+		static void ApplyMaterialInstance(
+			UStaticMesh* Mesh,
+			UMaterialInstanceDynamic* DynamicMaterial,
+			FVector Color,
+			float UV1,
+			float UV2,
+			float Roughness,
+			float Metallic
+			);
 };

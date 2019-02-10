@@ -31,7 +31,7 @@ APeck_GAM_415Projectile::APeck_GAM_415Projectile()
 	InitialLifeSpan = 3.0f;
 }
 
-/*void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
@@ -40,4 +40,4 @@ APeck_GAM_415Projectile::APeck_GAM_415Projectile()
 
 		Destroy();
 	}
-}*/
+}

@@ -81,14 +81,6 @@ APeck_GAM_415Character::APeck_GAM_415Character()
 
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
-
-	EndColorBuildup = 0;
-	EndColorBuildupDirection = 1;
-	PixelShaderTopLeftColor = FColor::Green;
-	ComputeShaderSimulationSpeed = 1.0;
-	ComputeShaderBlend = 0.5f;
-	ComputeShaderBlendScalar = 0;
-	TotalElapsedTime = 0;
 }
 
 void APeck_GAM_415Character::BeginPlay()
@@ -110,10 +102,6 @@ void APeck_GAM_415Character::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
-
-	PixelShading = new FPixelShaderUsageExample(PixelShaderTopLeftColor, GetWorld()->Scene->GetFeatureLevel());
-	ComputeShading = new FComputeShaderUsageExample(ComputeShaderSimulationSpeed, 1024, 1024, GetWorld()->Scene->GetFeatureLevel());
-
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -147,17 +135,10 @@ void APeck_GAM_415Character::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAxis("TurnRate", this, &APeck_GAM_415Character::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &APeck_GAM_415Character::LookUpAtRate);
-
-	//ShaderPluginDemo Specific input mappings  
-	InputComponent->BindAction("SavePixelShaderOutput", IE_Pressed, this, &APeck_GAM_415Character::SavePixelShaderOutput);
-	InputComponent->BindAction("SaveComputeShaderOutput", IE_Pressed, this, &APeck_GAM_415Character::SaveComputeShaderOutput);
-	InputComponent->BindAxis("ComputeShaderBlend", this, &APeck_GAM_415Character::ModifyComputeShaderBlend);
-
 }
 
 void APeck_GAM_415Character::OnFire()
 {
-	/*
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
@@ -182,27 +163,6 @@ void APeck_GAM_415Character::OnFire()
 
 				// spawn the projectile at the muzzle
 				World->SpawnActor<APeck_GAM_415Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-			}
-		}
-	}*/
-
-	FHitResult HitResult;
-	FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
-	FRotator Direction = FirstPersonCameraComponent->GetComponentRotation();
-	FVector EndLocation = StartLocation + Direction.Vector() * 10000;
-	FCollisionQueryParams QueryParams;
-	QueryParams.AddIgnoredActor(this);
-	if (GetWorld()->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, QueryParams)) {
-		TArray <UStaticMeshComponent*> StaticMeshComponents = TArray <UStaticMeshComponent*>();
-		AActor* HitActor = HitResult.GetActor();
-		if (NULL != HitActor) {
-			HitActor->GetComponents <UStaticMeshComponent>(StaticMeshComponents);
-			for (int32 i = 0; i < StaticMeshComponents.Num(); i++) {
-				UStaticMeshComponent * CurrentStaticMeshPtr = StaticMeshComponents[i];
-				CurrentStaticMeshPtr->SetMaterial(0, MaterialToApplyToClickedObject);
-				UMaterialInstanceDynamic* MID = CurrentStaticMeshPtr->CreateAndSetMaterialInstanceDynamic(0);
-				UTexture* CastedRenderTarget = Cast <UTexture>(RenderTarget);
-				MID->SetTextureParameterValue("InputTexture", CastedRenderTarget);
 			}
 		}
 	}
@@ -253,36 +213,6 @@ void APeck_GAM_415Character::EndTouch(const ETouchIndex::Type FingerIndex, const
 		OnFire();
 	}
 	TouchItem.bIsPressed = false;
-}
-
-void APeck_GAM_415Character::BeginDestroy()
-{
-	Super::BeginDestroy();
-	if (PixelShading) {
-		delete PixelShading;
-	}
-	if (ComputeShading) {
-		delete ComputeShading;
-	}
-}
-
-void APeck_GAM_415Character::Tick(float DeltaSeconds)
-{
-	Super::Tick(DeltaSeconds);
-	TotalElapsedTime += DeltaSeconds;
-	if (PixelShading) {
-		EndColorBuildup = FMath::Clamp(EndColorBuildup + DeltaSeconds * EndColorBuildupDirection, 0.0f, 1.0f);
-		if (EndColorBuildup >= 1.0 || EndColorBuildup <= 0) {
-			EndColorBuildupDirection *= -1;
-		}
-		FTexture2DRHIRef InputTexture = NULL;
-		if (ComputeShading) {
-			ComputeShading->ExecuteComputeShader(TotalElapsedTime);
-			InputTexture = ComputeShading->GetTexture(); //This is the output texture from the compute shader that we will pass to the pixel shader. 
-		}
-		ComputeShaderBlend = FMath::Clamp(ComputeShaderBlend + ComputeShaderBlendScalar * DeltaSeconds, 0.0f, 1.0f);
-		PixelShading->ExecutePixelShader(RenderTarget, InputTexture, FColor(EndColorBuildup * 255, 0, 0, 255), ComputeShaderBlend);
-	}
 }
 
 //Commenting this section out to be consistent with FPS BP template.
@@ -366,19 +296,4 @@ bool APeck_GAM_415Character::EnableTouchscreenMovement(class UInputComponent* Pl
 	}
 	
 	return false;
-}
-
-void APeck_GAM_415Character::ModifyComputeShaderBlend(float NewScalar)
-{
-	ComputeShaderBlendScalar = NewScalar;
-}
-
-void APeck_GAM_415Character::SavePixelShaderOutput()
-{
-	PixelShading->Save();
-}
-
-void APeck_GAM_415Character::SaveComputeShaderOutput()
-{
-	ComputeShading->Save();
 }

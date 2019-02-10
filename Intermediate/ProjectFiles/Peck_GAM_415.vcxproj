@@ -596,16 +596,10 @@
 		<None Include="..\..\Plugins\RuntimeMeshComponent\RuntimeMeshComponent.uplugin" />
 		<None Include="..\..\Plugins\RuntimeMeshComponent\Resources\Icon128.png" />
 		<None Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Peck_Plugin.Build.cs" />
-		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\Peck_FirstPersonProjectile.cpp" />
 		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\Peck_Plugin.cpp" />
 		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\Peck_PluginBPLibrary.cpp" />
-		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\Peck_PluginProjectile.cpp" />
-		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\TP_FirstPersonProjectile.cpp" />
-		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\Peck_FirstPersonProjectile.h" />
 		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\Peck_Plugin.h" />
 		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\Peck_PluginBPLibrary.h" />
-		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\Peck_PluginProjectile.h" />
-		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\TP_FirstPersonProjectile.h" />
 		<None Include="..\..\Plugins\PixelShader\Source\PixelShader\PixelShader.Build.cs" />
 		<ClCompile Include="..\..\Plugins\PixelShader\Source\PixelShader\Private\PixelShaderDeclaration.cpp" />
 		<ClInclude Include="..\..\Plugins\PixelShader\Source\PixelShader\Private\PixelShaderDeclaration.h" />

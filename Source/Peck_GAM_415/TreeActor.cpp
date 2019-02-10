@@ -20,20 +20,16 @@ ATreeActor::ATreeActor() :m_wholeTextureRegion(0, 0, 0, 0, m_textureSize, m_text
 
 	//Call and create the static meshes - There is an example BP in the testObject Folder
 	m_rootBase = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RootBase"));
-	m_rootBase->RelativeLocation = FVector(0.f, 0.f, 0.f);
+
 	RootComponent = m_rootBase;
-
 	m_treeBase = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TreeBase"));
-	m_treeBase->RelativeLocation = FVector(0.f, 0.f, 0.f);
 
+	//I can't seem to set the relative transform to FVector(0,0,0), but all the objects spawn
+	m_treeBase->ResetRelativeTransform();
+	m_treeBase->SetRelativeLocation(FVector(0, 0, 0), false, nullptr, ETeleportType::None);
 	m_tree_1 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree_One"));
-	m_tree_1->RelativeLocation = FVector(0.f, 0.f, 0.f);
-
 	m_tree_2 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tree_Two"));
-	m_tree_2->RelativeLocation = FVector(0.f, 0.f, 0.f);
-
 	m_treeTop = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TreeTop"));
-	m_treeTop->RelativeLocation = FVector(0.f, 0.f, 0.f);
 
 	m_treeBase->SetCollisionProfileName(UCollisionProfile::NoCollision_ProfileName);
 	{
