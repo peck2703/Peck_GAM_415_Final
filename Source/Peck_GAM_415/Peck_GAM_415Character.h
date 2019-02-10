@@ -10,7 +10,16 @@
 #include "Peck_GAM_415Character.generated.h"
 
 class UInputComponent;
+/*
 
+I want to have my plugin essentially overwrite the projectile class, and have the "user"
+fill out the blueprint the way that I have mine currently set up, such as:
+- pick which decal to use
+- pick what color, or random
+- pick what sound, if any
+- choose lifespan of splats
+
+*/
 UCLASS()
 class APeck_GAM_415Character : public ACharacter
 {
@@ -83,7 +92,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
 		FColor PixelShaderTopLeftColor;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
@@ -94,6 +103,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
 		UTextureRenderTarget2D * RenderTarget;
+		*/
 
 protected:
 	

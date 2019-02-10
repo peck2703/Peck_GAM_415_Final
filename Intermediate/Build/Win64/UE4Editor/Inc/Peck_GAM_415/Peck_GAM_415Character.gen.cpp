@@ -17,9 +17,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 	PECK_GAM_415_API UClass* Z_Construct_UClass_APeck_GAM_415Character();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Peck_GAM_415();
-	ENGINE_API UClass* Z_Construct_UClass_UTextureRenderTarget2D_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -53,34 +50,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
 			};
 #endif
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RenderTarget_MetaData[] = {
-				{ "Category", "ShaderDemo" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_RenderTarget = { UE4CodeGen_Private::EPropertyClass::Object, "RenderTarget", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, RenderTarget), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(NewProp_RenderTarget_MetaData, ARRAY_COUNT(NewProp_RenderTarget_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaterialToApplyToClickedObject_MetaData[] = {
-				{ "Category", "ShaderDemo" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MaterialToApplyToClickedObject = { UE4CodeGen_Private::EPropertyClass::Object, "MaterialToApplyToClickedObject", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, MaterialToApplyToClickedObject), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(NewProp_MaterialToApplyToClickedObject_MetaData, ARRAY_COUNT(NewProp_MaterialToApplyToClickedObject_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ComputeShaderSimulationSpeed_MetaData[] = {
-				{ "Category", "ShaderDemo" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ComputeShaderSimulationSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "ComputeShaderSimulationSpeed", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, ComputeShaderSimulationSpeed), METADATA_PARAMS(NewProp_ComputeShaderSimulationSpeed_MetaData, ARRAY_COUNT(NewProp_ComputeShaderSimulationSpeed_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PixelShaderTopLeftColor_MetaData[] = {
-				{ "Category", "ShaderDemo" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-			};
-#endif
-			static const UE4CodeGen_Private::FStructPropertyParams NewProp_PixelShaderTopLeftColor = { UE4CodeGen_Private::EPropertyClass::Struct, "PixelShaderTopLeftColor", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, PixelShaderTopLeftColor), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(NewProp_PixelShaderTopLeftColor_MetaData, ARRAY_COUNT(NewProp_PixelShaderTopLeftColor_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUsingMotionControllers_MetaData[] = {
 				{ "Category", "Gameplay" },
@@ -214,10 +183,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh1P = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh1P", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_Mesh1P_MetaData, ARRAY_COUNT(NewProp_Mesh1P_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_RenderTarget,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MaterialToApplyToClickedObject,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ComputeShaderSimulationSpeed,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PixelShaderTopLeftColor,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bUsingMotionControllers,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FireAnimation,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FireSound,
@@ -252,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APeck_GAM_415Character, 746882224);
+	IMPLEMENT_CLASS(APeck_GAM_415Character, 569399019);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APeck_GAM_415Character(Z_Construct_UClass_APeck_GAM_415Character, &APeck_GAM_415Character::StaticClass, TEXT("/Script/Peck_GAM_415"), TEXT("APeck_GAM_415Character"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APeck_GAM_415Character);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

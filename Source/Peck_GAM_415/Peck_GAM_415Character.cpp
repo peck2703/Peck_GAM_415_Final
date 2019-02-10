@@ -82,6 +82,7 @@ APeck_GAM_415Character::APeck_GAM_415Character()
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 
+	/*
 	EndColorBuildup = 0;
 	EndColorBuildupDirection = 1;
 	PixelShaderTopLeftColor = FColor::Green;
@@ -89,7 +90,7 @@ APeck_GAM_415Character::APeck_GAM_415Character()
 	ComputeShaderBlend = 0.5f;
 	ComputeShaderBlendScalar = 0;
 	TotalElapsedTime = 0;
-
+	*/
 }
 
 void APeck_GAM_415Character::BeginPlay()
@@ -111,8 +112,9 @@ void APeck_GAM_415Character::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
-	PixelShading = new FPixelShaderUsageExample(PixelShaderTopLeftColor, GetWorld()->Scene->GetFeatureLevel());
-	ComputeShading = new FComputeShaderUsageExample(ComputeShaderSimulationSpeed, 1024, 1024, GetWorld()->Scene->GetFeatureLevel());
+
+	/*PixelShading = new FPixelShaderUsageExample(PixelShaderTopLeftColor, GetWorld()->Scene->GetFeatureLevel());
+	ComputeShading = new FComputeShaderUsageExample(ComputeShaderSimulationSpeed, 1024, 1024, GetWorld()->Scene->GetFeatureLevel());*/
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -169,6 +171,10 @@ void APeck_GAM_415Character::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 	TotalElapsedTime += DeltaSeconds;
+
+	/* I won't be needing to use the PixelShader for my paintball game, or the Compute Shader
+	
+	
 	if (PixelShading) {
 		EndColorBuildup = FMath::Clamp(EndColorBuildup + DeltaSeconds * EndColorBuildupDirection, 0.0f, 1.0f);
 		if (EndColorBuildup >= 1.0 || EndColorBuildup <= 0) {
@@ -181,12 +187,11 @@ void APeck_GAM_415Character::Tick(float DeltaSeconds)
 		}
 		ComputeShaderBlend = FMath::Clamp(ComputeShaderBlend + ComputeShaderBlendScalar * DeltaSeconds, 0.0f, 1.0f);
 		PixelShading->ExecutePixelShader(RenderTarget, InputTexture, FColor(EndColorBuildup * 255, 0, 0, 255), ComputeShaderBlend);
-	}
+	}*/
 }
 
 void APeck_GAM_415Character::OnFire()
 {
-	/*
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
@@ -230,8 +235,13 @@ void APeck_GAM_415Character::OnFire()
 		{
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
-	}*/
+	}
 
+	/*
+	I commented this out and made my own in Blueprints so far, I plan to make a BP library based on the original projectile
+	blueprint and add in functionality for my plugin. I tried to imitate last week's tutorial with the lens distortion, but
+	I came across multiple problems, mostly that I couldn't find any blueprint library file for the projectile.
+	
 	FHitResult HitResult;
 	FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
 	FRotator Direction = FirstPersonCameraComponent->GetComponentRotation();
@@ -251,7 +261,7 @@ void APeck_GAM_415Character::OnFire()
 				MID->SetTextureParameterValue("InputTexture", CastedRenderTarget);
 			}
 		}
-	}
+	}*/
 
 }
 
@@ -370,15 +380,15 @@ bool APeck_GAM_415Character::EnableTouchscreenMovement(class UInputComponent* Pl
 
 void APeck_GAM_415Character::ModifyComputeShaderBlend(float NewScalar)
 {
-	ComputeShaderBlendScalar = NewScalar;
+	//ComputeShaderBlendScalar = NewScalar;
 }
 
 void APeck_GAM_415Character::SavePixelShaderOutput()
 {
-	PixelShading->Save();
+	//PixelShading->Save();
 }
 
 void APeck_GAM_415Character::SaveComputeShaderOutput()
 {
-	ComputeShading->Save();
+	//ComputeShading->Save();
 }

@@ -1,22 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Compiling game modules for hot reload
-  Performing 9 actions (4 in parallel)
-  [2/9] Link UE4Editor-ComputeShader-3908.dll
-  [3/9] Link UE4Editor-PixelShader-6983.dll
-  [4/9] Link UE4Editor-RuntimeMeshComponent-2400.dll
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-3908.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-3908.suppressed.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-6983.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-6983.suppressed.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2400.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2400.suppressed.exp
-  Peck_GAM_415Character.cpp
-  [5/9] Link UE4Editor-PixelShader-6983.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-6983.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-6983.exp
-  [6/9] Link UE4Editor-ComputeShader-3908.lib
-  [7/9] Link UE4Editor-RuntimeMeshComponent-2400.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-3908.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-3908.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2400.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2400.exp
-  [8/9] Link UE4Editor-Peck_GAM_415-3235.dll
-  [9/9] Link UE4Editor-Peck_GAM_415-3235.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-3235.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-3235.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-3235.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-3235.suppressed.exp
-  Deploying Peck_GAM_415Editor Win64 Development...
-  Total build time: 10.39 seconds (Local executor: 9.38 seconds)
+  Deleting old hot reload file: "D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Binaries\Win64\UE4Editor-RuntimeMeshComponent-1445.dll".
+  Deleting old hot reload file: "D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Binaries\Win64\UE4Editor-RuntimeMeshComponent-1445.pdb".
+  Performing 1 actions (4 in parallel)
+  [1/1] Link UE4Editor-Peck_GAM_415.dll
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.suppressed.exp
+  Total build time: 2.23 seconds (Local executor: 1.32 seconds)
