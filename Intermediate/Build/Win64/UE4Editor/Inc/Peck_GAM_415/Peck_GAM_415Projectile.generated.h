@@ -99,7 +99,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APeck_GAM_415Projectile); \
 
 #define Peck_GAM_415_Source_Peck_GAM_415_Peck_GAM_415Projectile_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CollisionComp() { return STRUCT_OFFSET(APeck_GAM_415Projectile, CollisionComp); } \
-	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(APeck_GAM_415Projectile, ProjectileMovement); }
+	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(APeck_GAM_415Projectile, ProjectileMovement); } \
+	FORCEINLINE static uint32 __PPO__DecalToAdd() { return STRUCT_OFFSET(APeck_GAM_415Projectile, DecalToAdd); } \
+	FORCEINLINE static uint32 __PPO__lifespan() { return STRUCT_OFFSET(APeck_GAM_415Projectile, lifespan); } \
+	FORCEINLINE static uint32 __PPO__NumberOfFrames() { return STRUCT_OFFSET(APeck_GAM_415Projectile, NumberOfFrames); } \
+	FORCEINLINE static uint32 __PPO__DynamicDecal() { return STRUCT_OFFSET(APeck_GAM_415Projectile, DynamicDecal); }
 
 
 #define Peck_GAM_415_Source_Peck_GAM_415_Peck_GAM_415Projectile_h_9_PROLOG

@@ -3,6 +3,9 @@
 #include "Peck_GAM_415Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Materials/MaterialInstanceDynamic.h"
 
 APeck_GAM_415Projectile::APeck_GAM_415Projectile() 
 {
@@ -29,6 +32,7 @@ APeck_GAM_415Projectile::APeck_GAM_415Projectile()
 
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
+	
 }
 
 void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -38,6 +42,20 @@ void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherA
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
 
+		/*Attempting to replicate the BP activity*/
+
+		float decalSize = FMath::RandRange(60.f, 100.f);
+
+		DynamicDecal = UMaterialInstanceDynamic::Create(DecalToAdd, this);
+		//Set parameters
+		DynamicDecal->SetScalarParameterValue("Frame", NumberOfFrames);
+
+		//Create Color by FLinear
+
+		DynamicDecal->SetVectorParameterValue("Color", FLinearColor::MakeRandomColor());
+
+		UGameplayStatics::SpawnDecalAtLocation(OtherActor, DynamicDecal, FVector(decalSize), OtherActor->GetActorLocation(), OtherActor->GetActorRotation(), lifespan);
+		
 		Destroy();
 	}
 }

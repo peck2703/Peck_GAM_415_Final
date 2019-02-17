@@ -19,6 +19,21 @@ class APeck_GAM_415Projectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
 
+	UPROPERTY(EditAnywhere)
+		UMaterialInterface* DecalToAdd;
+
+	/*Lifespan determines how long the paint splat lasts (0 - forever)*/
+	UPROPERTY(EditAnywhere)
+		float lifespan;
+
+	UPROPERTY(EditAnywhere)
+		int NumberOfFrames = 4;
+
+	/*Somehow this property does not take the BlueprintReadWrite, because it causes an error
+	  but I am unable to generate the dynamic material needed to show the actual material*/
+	UPROPERTY(EditAnywhere)
+		UMaterialInstanceDynamic* DynamicDecal;
+
 public:
 	APeck_GAM_415Projectile();
 

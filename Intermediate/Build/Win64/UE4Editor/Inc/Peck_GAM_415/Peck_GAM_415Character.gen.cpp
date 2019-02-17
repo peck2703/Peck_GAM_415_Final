@@ -48,6 +48,7 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 				{ "HideCategories", "Navigation" },
 				{ "IncludePath", "Peck_GAM_415Character.h" },
 				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
+				{ "ToolTip", "I want to have my plugin essentially overwrite the projectile class, and have the \"user\"\nfill out the blueprint the way that I have mine currently set up, such as:\n- pick which decal to use\n- pick what color, or random\n- pick what sound, if any\n- choose lifespan of splats" },
 			};
 #endif
 #if WITH_METADATA
@@ -217,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APeck_GAM_415Character, 569399019);
+	IMPLEMENT_CLASS(APeck_GAM_415Character, 1022191703);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APeck_GAM_415Character(Z_Construct_UClass_APeck_GAM_415Character, &APeck_GAM_415Character::StaticClass, TEXT("/Script/Peck_GAM_415"), TEXT("APeck_GAM_415Character"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APeck_GAM_415Character);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,7 +1,15 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Deleting old hot reload file: "D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Binaries\Win64\UE4Editor-RuntimeMeshComponent-1445.dll".
-  Deleting old hot reload file: "D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Binaries\Win64\UE4Editor-RuntimeMeshComponent-1445.pdb".
-  Performing 1 actions (4 in parallel)
-  [1/1] Link UE4Editor-Peck_GAM_415.dll
+  Parsing headers for Peck_GAM_415Editor
+    Running UnrealHeaderTool "D:\School_Documents\GAM_415\Peck_GAM_415\Peck_GAM_415.uproject" "D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\Peck_GAM_415Editor\Development\Peck_GAM_415Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for Peck_GAM_415Editor in 6.4698383 seconds
+  Performing 6 actions (4 in parallel)
+  Peck_GAM_415Projectile.cpp
+  Peck_GAM_415.init.gen.cpp
+  Peck_GAM_415Character.cpp
+  Peck_GAM_415Projectile.gen.cpp
+  [5/6] Link UE4Editor-Peck_GAM_415.dll
+  [6/6] Link UE4Editor-Peck_GAM_415.lib
+     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.exp
      Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415.suppressed.exp
-  Total build time: 2.23 seconds (Local executor: 1.32 seconds)
+  Deploying Peck_GAM_415Editor Win64 Development...
+  Total build time: 16.74 seconds (Local executor: 9.37 seconds)

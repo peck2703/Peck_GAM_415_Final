@@ -124,7 +124,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{C7045E62-70C6-4D6C-B425-33F82F02945F}</ProjectGuid>
+		<ProjectGuid>{AE57D19D-72A2-421B-93F1-472583442487}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>Peck_GAM_415</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>

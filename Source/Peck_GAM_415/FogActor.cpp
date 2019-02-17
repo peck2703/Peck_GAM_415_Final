@@ -140,13 +140,12 @@ void AFogActor::UpdateTextureRegions(UTexture2D * Texture, int32 MipIndex, uint3
 void AFogActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	RevealSmoothCircle(FVector2D(0.f, 0.f), 10.f);
 }
 
 // Called every frame
 void AFogActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 

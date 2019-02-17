@@ -223,7 +223,7 @@ void APeck_GAM_415Character::OnFire()
 	// try and play the sound if specified
 	if (FireSound != NULL)
 	{
-		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation(), 0.5f);
 	}
 
 	// try and play a firing animation if specified
