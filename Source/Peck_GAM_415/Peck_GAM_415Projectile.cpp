@@ -7,7 +7,12 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Materials/MaterialInstanceDynamic.h"
 
-APeck_GAM_415Projectile::APeck_GAM_415Projectile() 
+UDecalComponent * APeck_GAM_415Projectile::SpawnDecalAtLocation(const UObject * WorldContextObject, UMaterialInterface * DecalMaterial, FVector DecalSize, FVector Location, FRotator Rotation, float LifeSpan)
+{
+	return nullptr;
+}
+
+APeck_GAM_415Projectile::APeck_GAM_415Projectile()
 {
 	// Use a sphere as a simple collision representation
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
@@ -54,7 +59,8 @@ void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherA
 
 		DynamicDecal->SetVectorParameterValue("Color", FLinearColor::MakeRandomColor());
 
-		UGameplayStatics::SpawnDecalAtLocation(OtherActor, DynamicDecal, FVector(decalSize), OtherActor->GetActorLocation(), OtherActor->GetActorRotation(), lifespan);
+		UGameplayStatics::SpawnDecalAtLocation(OtherActor, DynamicDecal, FVector(decalSize), Hit.Location, OtherActor->GetActorRotation(), lifespan);
+
 		
 		Destroy();
 	}

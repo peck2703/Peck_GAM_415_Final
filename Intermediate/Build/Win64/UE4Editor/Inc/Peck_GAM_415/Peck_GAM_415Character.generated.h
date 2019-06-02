@@ -63,11 +63,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APeck_GAM_415Character); \
 	FORCEINLINE static uint32 __PPO__Mesh1P() { return STRUCT_OFFSET(APeck_GAM_415Character, Mesh1P); } \
 	FORCEINLINE static uint32 __PPO__FP_Gun() { return STRUCT_OFFSET(APeck_GAM_415Character, FP_Gun); } \
 	FORCEINLINE static uint32 __PPO__FP_MuzzleLocation() { return STRUCT_OFFSET(APeck_GAM_415Character, FP_MuzzleLocation); } \
-	FORCEINLINE static uint32 __PPO__VR_Gun() { return STRUCT_OFFSET(APeck_GAM_415Character, VR_Gun); } \
-	FORCEINLINE static uint32 __PPO__VR_MuzzleLocation() { return STRUCT_OFFSET(APeck_GAM_415Character, VR_MuzzleLocation); } \
-	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(APeck_GAM_415Character, FirstPersonCameraComponent); } \
-	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(APeck_GAM_415Character, R_MotionController); } \
-	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(APeck_GAM_415Character, L_MotionController); }
+	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(APeck_GAM_415Character, FirstPersonCameraComponent); }
 
 
 #define Peck_GAM_415_Source_Peck_GAM_415_Peck_GAM_415Character_h_23_PROLOG

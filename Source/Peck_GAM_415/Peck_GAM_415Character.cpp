@@ -58,39 +58,8 @@ APeck_GAM_415Character::APeck_GAM_415Character()
 	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
 	// are set in the derived blueprint asset named MyCharacter to avoid direct content references in C++.
 
-	// Create VR Controllers.
-	R_MotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("R_MotionController"));
-	R_MotionController->Hand = EControllerHand::Right;
-	R_MotionController->SetupAttachment(RootComponent);
-	L_MotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("L_MotionController"));
-	L_MotionController->SetupAttachment(RootComponent);
-
-	// Create a gun and attach it to the right-hand VR controller.
-	// Create a gun mesh component
-	VR_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("VR_Gun"));
-	VR_Gun->SetOnlyOwnerSee(true);			// only the owning player will see this mesh
-	VR_Gun->bCastDynamicShadow = false;
-	VR_Gun->CastShadow = false;
-	VR_Gun->SetupAttachment(R_MotionController);
-	VR_Gun->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
-
-	VR_MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("VR_MuzzleLocation"));
-	VR_MuzzleLocation->SetupAttachment(VR_Gun);
-	VR_MuzzleLocation->SetRelativeLocation(FVector(0.000004, 53.999992, 10.000000));
-	VR_MuzzleLocation->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));		// Counteract the rotation of the VR gun model.
-
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
-
-	/*
-	EndColorBuildup = 0;
-	EndColorBuildupDirection = 1;
-	PixelShaderTopLeftColor = FColor::Green;
-	ComputeShaderSimulationSpeed = 1.0;
-	ComputeShaderBlend = 0.5f;
-	ComputeShaderBlendScalar = 0;
-	TotalElapsedTime = 0;
-	*/
 }
 
 void APeck_GAM_415Character::BeginPlay()
@@ -104,17 +73,12 @@ void APeck_GAM_415Character::BeginPlay()
 	// Show or hide the two versions of the gun based on whether or not we're using motion controllers.
 	if (bUsingMotionControllers)
 	{
-		VR_Gun->SetHiddenInGame(false, true);
 		Mesh1P->SetHiddenInGame(true, true);
 	}
 	else
 	{
-		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
-
-	/*PixelShading = new FPixelShaderUsageExample(PixelShaderTopLeftColor, GetWorld()->Scene->GetFeatureLevel());
-	ComputeShading = new FComputeShaderUsageExample(ComputeShaderSimulationSpeed, 1024, 1024, GetWorld()->Scene->GetFeatureLevel());*/
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -132,11 +96,6 @@ void APeck_GAM_415Character::SetupPlayerInputComponent(class UInputComponent* Pl
 	// Bind fire event
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APeck_GAM_415Character::OnFire);
 
-	// Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
-
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &APeck_GAM_415Character::OnResetVR);
-
 	// Bind movement events
 	PlayerInputComponent->BindAxis("MoveForward", this, &APeck_GAM_415Character::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &APeck_GAM_415Character::MoveRight);
@@ -149,45 +108,13 @@ void APeck_GAM_415Character::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &APeck_GAM_415Character::LookUpAtRate);
 
-	//ShaderPluginDemo Specific input mappings  
-	InputComponent->BindAction("SavePixelShaderOutput", IE_Pressed, this, &APeck_GAM_415Character::SavePixelShaderOutput);
-	InputComponent->BindAction("SaveComputeShaderOutput", IE_Pressed, this, &APeck_GAM_415Character::SaveComputeShaderOutput);
-	InputComponent->BindAxis("ComputeShaderBlend", this, &APeck_GAM_415Character::ModifyComputeShaderBlend);
 
-}
-
-void APeck_GAM_415Character::BeginDestroy()
-{
-	Super::BeginDestroy();
-	if (PixelShading) {
-		delete PixelShading;
-	}
-	if (ComputeShading) {
-		delete ComputeShading;
-	}
 }
 
 void APeck_GAM_415Character::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 	TotalElapsedTime += DeltaSeconds;
-
-	/* I won't be needing to use the PixelShader for my paintball game, or the Compute Shader
-	
-	
-	if (PixelShading) {
-		EndColorBuildup = FMath::Clamp(EndColorBuildup + DeltaSeconds * EndColorBuildupDirection, 0.0f, 1.0f);
-		if (EndColorBuildup >= 1.0 || EndColorBuildup <= 0) {
-			EndColorBuildupDirection *= -1;
-		}
-		FTexture2DRHIRef InputTexture = NULL;
-		if (ComputeShading) {
-			ComputeShading->ExecuteComputeShader(TotalElapsedTime);
-			InputTexture = ComputeShading->GetTexture(); //This is the output texture from the compute shader that we will pass to the pixel shader. 
-		}
-		ComputeShaderBlend = FMath::Clamp(ComputeShaderBlend + ComputeShaderBlendScalar * DeltaSeconds, 0.0f, 1.0f);
-		PixelShading->ExecutePixelShader(RenderTarget, InputTexture, FColor(EndColorBuildup * 255, 0, 0, 255), ComputeShaderBlend);
-	}*/
 }
 
 void APeck_GAM_415Character::OnFire()
@@ -198,25 +125,16 @@ void APeck_GAM_415Character::OnFire()
 		UWorld* const World = GetWorld();
 		if (World != NULL)
 		{
-			if (bUsingMotionControllers)
-			{
-				const FRotator SpawnRotation = VR_MuzzleLocation->GetComponentRotation();
-				const FVector SpawnLocation = VR_MuzzleLocation->GetComponentLocation();
-				World->SpawnActor<APeck_GAM_415Projectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-			}
-			else
-			{
-				const FRotator SpawnRotation = GetControlRotation();
-				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-				const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
+			const FRotator SpawnRotation = GetControlRotation();
+			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+			const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
 
-				//Set Spawn Collision Handling Override
-				FActorSpawnParameters ActorSpawnParams;
-				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+			//Set Spawn Collision Handling Override
+			FActorSpawnParameters ActorSpawnParams;
+			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
-				// spawn the projectile at the muzzle
-				World->SpawnActor<APeck_GAM_415Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-			}
+			// spawn the projectile at the muzzle
+			World->SpawnActor<APeck_GAM_415Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 		}
 	}
 
@@ -236,102 +154,7 @@ void APeck_GAM_415Character::OnFire()
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
 	}
-
-	/*
-	I commented this out and made my own in Blueprints so far, I plan to make a BP library based on the original projectile
-	blueprint and add in functionality for my plugin. I tried to imitate last week's tutorial with the lens distortion, but
-	I came across multiple problems, mostly that I couldn't find any blueprint library file for the projectile.
-	
-	FHitResult HitResult;
-	FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
-	FRotator Direction = FirstPersonCameraComponent->GetComponentRotation();
-	FVector EndLocation = StartLocation + Direction.Vector() * 10000;
-	FCollisionQueryParams QueryParams;
-	QueryParams.AddIgnoredActor(this);
-	if (GetWorld()->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, QueryParams)) {
-		TArray <UStaticMeshComponent*> StaticMeshComponents = TArray <UStaticMeshComponent*>();
-		AActor* HitActor = HitResult.GetActor();
-		if (NULL != HitActor) {
-			HitActor->GetComponents <UStaticMeshComponent>(StaticMeshComponents);
-			for (int32 i = 0; i < StaticMeshComponents.Num(); i++) {
-				UStaticMeshComponent * CurrentStaticMeshPtr = StaticMeshComponents[i];
-				CurrentStaticMeshPtr->SetMaterial(0, MaterialToApplyToClickedObject);
-				UMaterialInstanceDynamic* MID = CurrentStaticMeshPtr->CreateAndSetMaterialInstanceDynamic(0);
-				UTexture* CastedRenderTarget = Cast <UTexture>(RenderTarget);
-				MID->SetTextureParameterValue("InputTexture", CastedRenderTarget);
-			}
-		}
-	}*/
-
 }
-
-void APeck_GAM_415Character::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void APeck_GAM_415Character::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == true)
-	{
-		return;
-	}
-	TouchItem.bIsPressed = true;
-	TouchItem.FingerIndex = FingerIndex;
-	TouchItem.Location = Location;
-	TouchItem.bMoved = false;
-}
-
-void APeck_GAM_415Character::EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == false)
-	{
-		return;
-	}
-	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
-	{
-		OnFire();
-	}
-	TouchItem.bIsPressed = false;
-}
-
-//Commenting this section out to be consistent with FPS BP template.
-//This allows the user to turn without using the right virtual joystick
-
-//void APeck_GAM_415Character::TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location)
-//{
-//	if ((TouchItem.bIsPressed == true) && (TouchItem.FingerIndex == FingerIndex))
-//	{
-//		if (TouchItem.bIsPressed)
-//		{
-//			if (GetWorld() != nullptr)
-//			{
-//				UGameViewportClient* ViewportClient = GetWorld()->GetGameViewport();
-//				if (ViewportClient != nullptr)
-//				{
-//					FVector MoveDelta = Location - TouchItem.Location;
-//					FVector2D ScreenSize;
-//					ViewportClient->GetViewportSize(ScreenSize);
-//					FVector2D ScaledDelta = FVector2D(MoveDelta.X, MoveDelta.Y) / ScreenSize;
-//					if (FMath::Abs(ScaledDelta.X) >= 4.0 / ScreenSize.X)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.X * BaseTurnRate;
-//						AddControllerYawInput(Value);
-//					}
-//					if (FMath::Abs(ScaledDelta.Y) >= 4.0 / ScreenSize.Y)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.Y * BaseTurnRate;
-//						AddControllerPitchInput(Value);
-//					}
-//					TouchItem.Location = Location;
-//				}
-//				TouchItem.Location = Location;
-//			}
-//		}
-//	}
-//}
 
 void APeck_GAM_415Character::MoveForward(float Value)
 {
@@ -361,34 +184,4 @@ void APeck_GAM_415Character::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
-}
-
-bool APeck_GAM_415Character::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
-{
-	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
-	{
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &APeck_GAM_415Character::BeginTouch);
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &APeck_GAM_415Character::EndTouch);
-
-		//Commenting this out to be more consistent with FPS BP template.
-		//PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &APeck_GAM_415Character::TouchUpdate);
-		return true;
-	}
-	
-	return false;
-}
-
-void APeck_GAM_415Character::ModifyComputeShaderBlend(float NewScalar)
-{
-	//ComputeShaderBlendScalar = NewScalar;
-}
-
-void APeck_GAM_415Character::SavePixelShaderOutput()
-{
-	//PixelShading->Save();
-}
-
-void APeck_GAM_415Character::SaveComputeShaderOutput()
-{
-	//ComputeShading->Save();
 }

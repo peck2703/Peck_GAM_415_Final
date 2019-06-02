@@ -34,6 +34,8 @@ class APeck_GAM_415Projectile : public AActor
 	UPROPERTY(EditAnywhere)
 		UMaterialInstanceDynamic* DynamicDecal;
 
+	static UDecalComponent* SpawnDecalAtLocation(const UObject* WorldContextObject, class UMaterialInterface* DecalMaterial, FVector DecalSize, FVector Location, FRotator Rotation = FRotator(-90, 0, 0), float LifeSpan = 0);
+
 public:
 	APeck_GAM_415Projectile();
 

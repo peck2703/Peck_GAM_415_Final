@@ -22,7 +22,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	PECK_GAM_415_API UClass* Z_Construct_UClass_APeck_GAM_415Projectile_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	HEADMOUNTEDDISPLAY_API UClass* Z_Construct_UClass_UMotionControllerComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -109,26 +108,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 #endif
 			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseTurnRate = { UE4CodeGen_Private::EPropertyClass::Float, "BaseTurnRate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000020015, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, BaseTurnRate), METADATA_PARAMS(NewProp_BaseTurnRate_MetaData, ARRAY_COUNT(NewProp_BaseTurnRate_MetaData)) };
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_L_MotionController_MetaData[] = {
-				{ "AllowPrivateAccess", "true" },
-				{ "Category", "Peck_GAM_415Character" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-				{ "ToolTip", "Motion controller (left hand)" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_L_MotionController = { UE4CodeGen_Private::EPropertyClass::Object, "L_MotionController", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, L_MotionController), Z_Construct_UClass_UMotionControllerComponent_NoRegister, METADATA_PARAMS(NewProp_L_MotionController_MetaData, ARRAY_COUNT(NewProp_L_MotionController_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_R_MotionController_MetaData[] = {
-				{ "AllowPrivateAccess", "true" },
-				{ "Category", "Peck_GAM_415Character" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-				{ "ToolTip", "Motion controller (right hand)" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_R_MotionController = { UE4CodeGen_Private::EPropertyClass::Object, "R_MotionController", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, R_MotionController), Z_Construct_UClass_UMotionControllerComponent_NoRegister, METADATA_PARAMS(NewProp_R_MotionController_MetaData, ARRAY_COUNT(NewProp_R_MotionController_MetaData)) };
-#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FirstPersonCameraComponent_MetaData[] = {
 				{ "AllowPrivateAccess", "true" },
 				{ "Category", "Camera" },
@@ -138,24 +117,6 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 			};
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent = { UE4CodeGen_Private::EPropertyClass::Object, "FirstPersonCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a001d, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(NewProp_FirstPersonCameraComponent_MetaData, ARRAY_COUNT(NewProp_FirstPersonCameraComponent_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VR_MuzzleLocation_MetaData[] = {
-				{ "Category", "Mesh" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-				{ "ToolTip", "Location on VR gun mesh where projectiles should spawn." },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_VR_MuzzleLocation = { UE4CodeGen_Private::EPropertyClass::Object, "VR_MuzzleLocation", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, VR_MuzzleLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(NewProp_VR_MuzzleLocation_MetaData, ARRAY_COUNT(NewProp_VR_MuzzleLocation_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VR_Gun_MetaData[] = {
-				{ "Category", "Mesh" },
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Peck_GAM_415Character.h" },
-				{ "ToolTip", "Gun mesh: VR view (attached to the VR controller directly, no arm, just the actual gun)" },
-			};
-#endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_VR_Gun = { UE4CodeGen_Private::EPropertyClass::Object, "VR_Gun", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APeck_GAM_415Character, VR_Gun), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_VR_Gun_MetaData, ARRAY_COUNT(NewProp_VR_Gun_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FP_MuzzleLocation_MetaData[] = {
 				{ "Category", "Mesh" },
@@ -191,11 +152,7 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_GunOffset,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BaseLookUpRate,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BaseTurnRate,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_L_MotionController,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_R_MotionController,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FirstPersonCameraComponent,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_VR_MuzzleLocation,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_VR_Gun,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FP_MuzzleLocation,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FP_Gun,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Mesh1P,
@@ -218,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodePeck_GAM_415Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APeck_GAM_415Character, 1022191703);
+	IMPLEMENT_CLASS(APeck_GAM_415Character, 2348548700);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APeck_GAM_415Character(Z_Construct_UClass_APeck_GAM_415Character, &APeck_GAM_415Character::StaticClass, TEXT("/Script/Peck_GAM_415"), TEXT("APeck_GAM_415Character"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APeck_GAM_415Character);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
