@@ -9,8 +9,9 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-        "Engine",
-        "ProceduralMeshComponent"
+				"Engine",
+				"ProceduralMeshComponent",
+				"AIModule"
 			]
 		}
 	]

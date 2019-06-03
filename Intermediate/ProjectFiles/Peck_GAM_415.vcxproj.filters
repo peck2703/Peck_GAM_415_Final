@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Peck_GAM_415.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{FDEA55D3-346D-4BF8-BA99-70E83D90E4E2}</UniqueIdentifier>
+			<UniqueIdentifier>{4DCC763D-38EE-4A2C-B038-6287F0FB4697}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Peck_GAM_415.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{03D00042-66AB-4826-8F28-B929B6B3E979}</UniqueIdentifier>
+			<UniqueIdentifier>{3155B64E-8F2B-4E29-A033-AA0FD926DAAA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,22 +31,22 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Plugins">
-			<UniqueIdentifier>{490526F8-FAB2-431E-BD65-069E6B47F04E}</UniqueIdentifier>
+			<UniqueIdentifier>{13571C7B-43F3-4E6C-8E71-366919A437C7}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\ComputeShader">
-			<UniqueIdentifier>{1B604DC8-C708-42F2-B76A-A43435FCBBA0}</UniqueIdentifier>
+			<UniqueIdentifier>{6FE3A683-E32B-441E-8F58-9951CA37CE79}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\ComputeShader\Source">
-			<UniqueIdentifier>{046BC5FF-CF03-4679-BE95-75BD499BCFD6}</UniqueIdentifier>
+			<UniqueIdentifier>{BA8E7122-3C4E-4AA1-9E54-39015098C27D}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\ComputeShader\Source\ComputeShader">
-			<UniqueIdentifier>{068916D9-3C01-438D-8B4B-08FDDFEC2B84}</UniqueIdentifier>
+			<UniqueIdentifier>{92A98CB4-A289-405E-BA21-3D882496744D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\ComputeShader\Source\ComputeShader\ComputeShader.Build.cs">
 			<Filter>Plugins\ComputeShader\Source\ComputeShader</Filter>
 		</None >
 		<Filter Include="Plugins\ComputeShader\Source\ComputeShader\Private">
-			<UniqueIdentifier>{F9145B92-4D8A-4CEF-BD78-949FA85E1E36}</UniqueIdentifier>
+			<UniqueIdentifier>{E8F45663-A7D9-4079-80D1-10E2F7B02521}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\ComputeShader\Source\ComputeShader\Private\ComputeShaderDeclaration.cpp">
 			<Filter>Plugins\ComputeShader\Source\ComputeShader\Private</Filter>
@@ -61,7 +61,7 @@
 			<Filter>Plugins\ComputeShader\Source\ComputeShader\Private</Filter>
 		</ClCompile >
 		<Filter Include="Plugins\ComputeShader\Source\ComputeShader\Public">
-			<UniqueIdentifier>{CAB81862-1FE1-428E-8B40-2D50C66C7765}</UniqueIdentifier>
+			<UniqueIdentifier>{AA407631-21B3-4FCD-9758-1FA1E1E2D227}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\ComputeShader\Source\ComputeShader\Public\ComputeShaderUsageExample.h">
 			<Filter>Plugins\ComputeShader\Source\ComputeShader\Public</Filter>
@@ -70,10 +70,10 @@
 			<Filter>Plugins\ComputeShader</Filter>
 		</None >
 		<Filter Include="Plugins\ComputeShader\Shaders">
-			<UniqueIdentifier>{075A6536-1789-45B9-A40D-1D6352925C74}</UniqueIdentifier>
+			<UniqueIdentifier>{5336A906-3D8B-4357-A1E9-46077E9F2A50}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\ComputeShader\Shaders\Private">
-			<UniqueIdentifier>{5771D820-D4BD-443F-960A-AD8CEFFC39F2}</UniqueIdentifier>
+			<UniqueIdentifier>{E2CAFF48-FB92-4ED6-A38E-5E16C018FDE8}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\ComputeShader\Shaders\Private\Common.ush">
 			<Filter>Plugins\ComputeShader\Shaders\Private</Filter>
@@ -97,37 +97,37 @@
 			<Filter>Plugins\ComputeShader\Shaders\Private</Filter>
 		</None >
 		<Filter Include="Plugins\Peck_Plugin">
-			<UniqueIdentifier>{F3055628-107A-4CA4-9878-B909A6776107}</UniqueIdentifier>
+			<UniqueIdentifier>{28847B61-B4DA-431F-B012-4C1A05D6C4BC}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\Peck_Plugin\Peck_Plugin.uplugin">
 			<Filter>Plugins\Peck_Plugin</Filter>
 		</None >
 		<Filter Include="Plugins\Peck_Plugin\Resources">
-			<UniqueIdentifier>{A092DA0B-7ED2-4275-85B9-4BDCDBFCC960}</UniqueIdentifier>
+			<UniqueIdentifier>{7F938E02-7A9B-4E98-9846-6E8B7E447268}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\Peck_Plugin\Resources\Icon128.png">
 			<Filter>Plugins\Peck_Plugin\Resources</Filter>
 		</None >
 		<Filter Include="Plugins\Peck_Plugin\Shaders">
-			<UniqueIdentifier>{FA4C8CA7-07EB-412E-A2BA-33D0721F9596}</UniqueIdentifier>
+			<UniqueIdentifier>{49462644-F1F6-44D5-AA4F-2456EB3C2878}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\Peck_Plugin\Shaders\Private">
-			<UniqueIdentifier>{AE680E2C-CEC5-49C3-B641-D53FA3431035}</UniqueIdentifier>
+			<UniqueIdentifier>{F3533758-6348-4CC9-A905-3399D20D9A34}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\Peck_Plugin\Shaders\Private\PeckShader.usf">
 			<Filter>Plugins\Peck_Plugin\Shaders\Private</Filter>
 		</None >
 		<Filter Include="Plugins\PixelShader">
-			<UniqueIdentifier>{39293471-0447-4FCE-AAE6-54CBEC9FB8A0}</UniqueIdentifier>
+			<UniqueIdentifier>{D2DD6872-A02C-4920-AE9A-BE1737C864E5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\PixelShader\PixelShader.uplugin">
 			<Filter>Plugins\PixelShader</Filter>
 		</None >
 		<Filter Include="Plugins\PixelShader\Shaders">
-			<UniqueIdentifier>{5FD355D0-A16B-40B6-BBF2-2D6030F4ACE2}</UniqueIdentifier>
+			<UniqueIdentifier>{49B7D92F-7420-49D8-8C61-F3230AFCDA14}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\PixelShader\Shaders\Private">
-			<UniqueIdentifier>{A22F4312-0DF8-4ECB-96C8-0530EC0A19E7}</UniqueIdentifier>
+			<UniqueIdentifier>{E4F56EAB-DC71-4CCF-BBFE-AAACA26BDE9D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\PixelShader\Shaders\Private\Common.ush">
 			<Filter>Plugins\PixelShader\Shaders\Private</Filter>
@@ -151,28 +151,28 @@
 			<Filter>Plugins\PixelShader\Shaders\Private</Filter>
 		</None >
 		<Filter Include="Plugins\RuntimeMeshComponent">
-			<UniqueIdentifier>{7DB01FB6-7665-45D0-B081-47ABEB7CB258}</UniqueIdentifier>
+			<UniqueIdentifier>{23A3B7E4-547B-4AE2-939D-B47137A98634}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\RuntimeMeshComponent\RuntimeMeshComponent.uplugin">
 			<Filter>Plugins\RuntimeMeshComponent</Filter>
 		</None >
 		<Filter Include="Plugins\RuntimeMeshComponent\Resources">
-			<UniqueIdentifier>{6C8A65B2-4B5E-4C41-B9BD-85705674417F}</UniqueIdentifier>
+			<UniqueIdentifier>{D7A10FA0-2909-442D-AC36-AC2F2179A81B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\RuntimeMeshComponent\Resources\Icon128.png">
 			<Filter>Plugins\RuntimeMeshComponent\Resources</Filter>
 		</None >
 		<Filter Include="Plugins\Peck_Plugin\Source">
-			<UniqueIdentifier>{D31B36A0-DFBC-48D4-88CB-3DD17988D9F1}</UniqueIdentifier>
+			<UniqueIdentifier>{514B221E-86B5-4578-928B-BD34776B84E3}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\Peck_Plugin\Source\Peck_Plugin">
-			<UniqueIdentifier>{880DE76F-2D2B-4917-9326-77FD34CCEE01}</UniqueIdentifier>
+			<UniqueIdentifier>{0B5483F4-EA1E-48E7-B1D1-57FC568AAA5C}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Peck_Plugin.Build.cs">
 			<Filter>Plugins\Peck_Plugin\Source\Peck_Plugin</Filter>
 		</None >
 		<Filter Include="Plugins\Peck_Plugin\Source\Peck_Plugin\Private">
-			<UniqueIdentifier>{DE6BCFA5-D60A-4910-8179-6C52872D7D33}</UniqueIdentifier>
+			<UniqueIdentifier>{F5ABDD41-9C2B-42BC-BAAB-9BFBCF943685}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Private\Peck_Plugin.cpp">
 			<Filter>Plugins\Peck_Plugin\Source\Peck_Plugin\Private</Filter>
@@ -181,7 +181,7 @@
 			<Filter>Plugins\Peck_Plugin\Source\Peck_Plugin\Private</Filter>
 		</ClCompile >
 		<Filter Include="Plugins\Peck_Plugin\Source\Peck_Plugin\Public">
-			<UniqueIdentifier>{0FCE5A45-DB8D-4D96-B3E8-4CAC7B1BA579}</UniqueIdentifier>
+			<UniqueIdentifier>{4FB7F309-91DC-46B3-BED6-332DE027B3B5}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\Peck_Plugin\Source\Peck_Plugin\Public\Peck_Plugin.h">
 			<Filter>Plugins\Peck_Plugin\Source\Peck_Plugin\Public</Filter>
@@ -190,16 +190,16 @@
 			<Filter>Plugins\Peck_Plugin\Source\Peck_Plugin\Public</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\PixelShader\Source">
-			<UniqueIdentifier>{E5AA50DB-F874-42A0-9678-864C505F0EB5}</UniqueIdentifier>
+			<UniqueIdentifier>{F0326DA2-1D82-4F73-84BB-DEA66C719CBD}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\PixelShader\Source\PixelShader">
-			<UniqueIdentifier>{BD731AF2-30C2-4A85-AB82-17B67CEE05E3}</UniqueIdentifier>
+			<UniqueIdentifier>{2EABB815-4CA0-489B-8E51-8BA743CB06B0}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\PixelShader\Source\PixelShader\PixelShader.Build.cs">
 			<Filter>Plugins\PixelShader\Source\PixelShader</Filter>
 		</None >
 		<Filter Include="Plugins\PixelShader\Source\PixelShader\Private">
-			<UniqueIdentifier>{CBC24F0F-07CE-4655-960D-53ABBDC9375D}</UniqueIdentifier>
+			<UniqueIdentifier>{707C9BEE-3D0D-413D-8209-C45AE9E3711E}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\PixelShader\Source\PixelShader\Private\PixelShaderDeclaration.cpp">
 			<Filter>Plugins\PixelShader\Source\PixelShader\Private</Filter>
@@ -214,22 +214,22 @@
 			<Filter>Plugins\PixelShader\Source\PixelShader\Private</Filter>
 		</ClCompile >
 		<Filter Include="Plugins\PixelShader\Source\PixelShader\Public">
-			<UniqueIdentifier>{BD31A9F9-8FCC-423E-9FB6-E9D504EA49B4}</UniqueIdentifier>
+			<UniqueIdentifier>{0ED9BA41-2F9F-43F4-92F5-557A1D1A1C6D}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\PixelShader\Source\PixelShader\Public\PixelShaderUsageExample.h">
 			<Filter>Plugins\PixelShader\Source\PixelShader\Public</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source">
-			<UniqueIdentifier>{03469822-6015-40AD-8FB8-77E802884896}</UniqueIdentifier>
+			<UniqueIdentifier>{38DCAB09-6723-49F1-BDA7-67C4D4BEA156}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent">
-			<UniqueIdentifier>{1FE68CE6-98AE-439F-8827-97546B1FB579}</UniqueIdentifier>
+			<UniqueIdentifier>{F278FF7B-A27E-4C50-AF26-980CB349FAAB}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\RuntimeMeshComponent.Build.cs">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent</Filter>
 		</None >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Private">
-			<UniqueIdentifier>{9E0D5249-9F5D-4DCF-9F1A-A92DD1E589C9}</UniqueIdentifier>
+			<UniqueIdentifier>{97E6E1D8-0A84-4AB1-89B9-BDC463C175E2}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Private\RuntimeMeshComponent.cpp">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Private</Filter>
@@ -256,7 +256,7 @@
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Private</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public">
-			<UniqueIdentifier>{BFEBB72F-D704-49EC-9224-2CB522AF9B50}</UniqueIdentifier>
+			<UniqueIdentifier>{58DCE9E1-05DA-4BFA-A5EF-3A247FFC4220}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public\RuntimeMeshAsync.h">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public</Filter>
@@ -298,13 +298,13 @@
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor">
-			<UniqueIdentifier>{891F0228-0D64-43AA-A1E8-918B55043995}</UniqueIdentifier>
+			<UniqueIdentifier>{9B1CC331-6952-4F98-897A-EB0DCE056C91}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\RuntimeMeshComponentEditor.Build.cs">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor</Filter>
 		</None >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Private">
-			<UniqueIdentifier>{70A5147A-BC00-48C9-B755-F95E6BA0D3B9}</UniqueIdentifier>
+			<UniqueIdentifier>{11161582-2D9E-472E-B09A-10E17D78505E}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Private\RuntimeMeshComponentDetails.cpp">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Private</Filter>
@@ -319,13 +319,13 @@
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Private</Filter>
 		</ClInclude >
 		<Filter Include="Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Public">
-			<UniqueIdentifier>{3F6D6C0F-D8D7-4C0C-8794-F3751185543E}</UniqueIdentifier>
+			<UniqueIdentifier>{B211193E-33CC-4C37-8A0A-4CDBC3FFE9AE}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Public\IRuntimeMeshComponentEditorPlugin.h">
 			<Filter>Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\Public</Filter>
 		</ClInclude >
 		<Filter Include="Source\Peck_GAM_415">
-			<UniqueIdentifier>{3D30983E-4B80-4404-A9D3-4E39D2E42020}</UniqueIdentifier>
+			<UniqueIdentifier>{705AB190-6800-4529-B450-86EBBBA895DF}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Peck_GAM_415\Cube_ProcMesh.cpp">
 			<Filter>Source\Peck_GAM_415</Filter>
@@ -395,6 +395,30 @@
 		</ClCompile >
 		<ClInclude Include="..\..\Source\Peck_GAM_415\TreeActor.h">
 			<Filter>Source\Peck_GAM_415</Filter>
+		</ClInclude >
+		<Filter Include="Source\Peck_GAM_415\TP_ThirdPerson">
+			<UniqueIdentifier>{D608BE5A-1FBA-4BC2-90A5-348B96C5323B}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\AI_Patrol_Controller.cpp">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\AI_Patrol_Controller.h">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\TP_ThirdPerson.h">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\TP_ThirdPersonCharacter.cpp">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\TP_ThirdPersonCharacter.h">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\TP_ThirdPersonGameMode.cpp">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Peck_GAM_415\TP_ThirdPerson\TP_ThirdPersonGameMode.h">
+			<Filter>Source\Peck_GAM_415\TP_ThirdPerson</Filter>
 		</ClInclude >
 	</ItemGroup>
 </Project>

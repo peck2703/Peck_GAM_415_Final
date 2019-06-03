@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I D:\ProgramFiles\UE_4.18\Engine\Source
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Source
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Inc\Peck_GAM_415
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Source\Peck_GAM_415
+/I E:\Peck_GAM_415\Source
+/I E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Inc\Peck_GAM_415
+/I E:\Peck_GAM_415\Source\Peck_GAM_415
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\Core\Public
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\Core\Public\Async
@@ -355,25 +355,25 @@
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\AudioMixer\Public\DSP
 /I D:\ProgramFiles\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer
 /I D:\ProgramFiles\UE_4.18\Engine\Source\Runtime\AudioMixer
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader\Public
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader\Public
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader
+/I E:\Peck_GAM_415\Plugins\PixelShader\Source
+/I E:\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader\Public
+/I E:\Peck_GAM_415\Plugins\PixelShader\Source\PixelShader
+/I E:\Peck_GAM_415\Plugins\ComputeShader\Source
+/I E:\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader\Public
+/I E:\Peck_GAM_415\Plugins\ComputeShader\Source\ComputeShader
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent
 /I D:\ProgramFiles\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeMeshComponent
-/I D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent
+/I E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source
+/I E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public
+/I E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeMeshComponent
+/I E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent
 /FI"D:\ProgramFiles\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"D:\ProgramFiles\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"D:\ProgramFiles\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Inc\Peck_GAM_415\Cube_RunMesh.gen.cpp"
-/FI"D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\Peck_GAM_415\Definitions.Peck_GAM_415.h"
-/Fo"D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\Peck_GAM_415\Cube_RunMesh.gen.cpp.obj"
+"E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Inc\Peck_GAM_415\Cube_RunMesh.gen.cpp"
+/FI"E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\Peck_GAM_415\Definitions.Peck_GAM_415.h"
+/Fo"E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\Peck_GAM_415\Cube_RunMesh.gen.cpp.obj"
 /TP
 /GR-
 /W4

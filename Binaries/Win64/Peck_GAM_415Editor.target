@@ -16,75 +16,75 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor-ComputeShader-2087.dll",
+			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor-ComputeShader-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor-ComputeShader-2087.pdb",
+			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor-ComputeShader-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/ComputeShader/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-ComputeShader-2087.lib",
+			"Path": "$(ProjectDir)/Plugins/ComputeShader/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-ComputeShader-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Binaries/Win64/UE4Editor-Peck_Plugin-2087.dll",
+			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Binaries/Win64/UE4Editor-Peck_Plugin-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Binaries/Win64/UE4Editor-Peck_Plugin-2087.pdb",
+			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Binaries/Win64/UE4Editor-Peck_Plugin-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Peck_Plugin-2087.lib",
+			"Path": "$(ProjectDir)/Plugins/Peck_Plugin/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Peck_Plugin-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/PixelShader/Binaries/Win64/UE4Editor-PixelShader-2087.dll",
+			"Path": "$(ProjectDir)/Plugins/PixelShader/Binaries/Win64/UE4Editor-PixelShader-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/PixelShader/Binaries/Win64/UE4Editor-PixelShader-2087.pdb",
+			"Path": "$(ProjectDir)/Plugins/PixelShader/Binaries/Win64/UE4Editor-PixelShader-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/PixelShader/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-PixelShader-2087.lib",
+			"Path": "$(ProjectDir)/Plugins/PixelShader/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-PixelShader-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponent-2087.dll",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponent-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponent-2087.pdb",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponent-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-RuntimeMeshComponent-2087.lib",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-RuntimeMeshComponent-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponentEditor-2087.dll",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponentEditor-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponentEditor-2087.pdb",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Binaries/Win64/UE4Editor-RuntimeMeshComponentEditor-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-RuntimeMeshComponentEditor-2087.lib",
+			"Path": "$(ProjectDir)/Plugins/RuntimeMeshComponent/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-RuntimeMeshComponentEditor-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Peck_GAM_415-2087.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Peck_GAM_415-8041.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Peck_GAM_415-2087.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Peck_GAM_415-8041.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Peck_GAM_415-2087.lib",
+			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Peck_GAM_415-8041.lib",
 			"Type": "ImportLibrary"
 		},
 		{

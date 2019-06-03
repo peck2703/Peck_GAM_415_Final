@@ -1,22 +1,31 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
   Creating makefile for hot reloading Peck_GAM_415Editor (modules to compile have changed)
-EXEC : warning : D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\RuntimeMeshComponent.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
-EXEC : warning : D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\RuntimeMeshComponentEditor.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
+EXEC : warning : E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\RuntimeMeshComponent.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
+EXEC : warning : E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponentEditor\RuntimeMeshComponentEditor.Build.cs: warning: Module constructors should take a ReadOnlyTargetRules argument (rather than a TargetInfo argument) and pass it to the base class constructor from 4.15 onwards. Please update the method signature.
   Compiling game modules for hot reload
-  Performing 7 actions (4 in parallel)
-  [1/7] Link UE4Editor-ComputeShader-2087.dll
-  [2/7] Link UE4Editor-PixelShader-2087.dll
-  [3/7] Link UE4Editor-RuntimeMeshComponent-2087.dll
-  [4/7] Link UE4Editor-PixelShader-2087.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2087.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2087.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2087.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-2087.suppressed.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-2087.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-2087.suppressed.exp
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2087.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2087.suppressed.exp
-  [5/7] Link UE4Editor-ComputeShader-2087.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-2087.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-2087.exp
-  [6/7] Link UE4Editor-RuntimeMeshComponent-2087.lib
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2087.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-2087.exp
-  [7/7] Link UE4Editor-Peck_GAM_415-2087.dll
-     Creating library D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2087.suppressed.lib and object D:\School_Documents\GAM_415\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-2087.suppressed.exp
+  Parsing headers for Peck_GAM_415Editor
+    Running UnrealHeaderTool "E:\Peck_GAM_415\Peck_GAM_415.uproject" "E:\Peck_GAM_415\Intermediate\Build\Win64\Peck_GAM_415Editor\Development\Peck_GAM_415Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for Peck_GAM_415Editor in 7.1628532 seconds
+  Performing 12 actions (4 in parallel)
+  TP_ThirdPersonCharacter.gen.cpp
+  Peck_GAM_415.init.gen.cpp
+  TP_ThirdPersonGameMode.cpp
+  TP_ThirdPersonCharacter.cpp
+  [5/12] Link UE4Editor-PixelShader-8041.dll
+  [6/12] Link UE4Editor-ComputeShader-8041.dll
+  [7/12] Link UE4Editor-RuntimeMeshComponent-8041.dll
+     Creating library E:\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-8041.suppressed.lib and object E:\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-8041.suppressed.exp
+     Creating library E:\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-8041.suppressed.lib and object E:\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-8041.suppressed.exp
+     Creating library E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-8041.suppressed.lib and object E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-8041.suppressed.exp
+  [8/12] Link UE4Editor-PixelShader-8041.lib
+     Creating library E:\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-8041.lib and object E:\Peck_GAM_415\Plugins\PixelShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PixelShader-8041.exp
+  [9/12] Link UE4Editor-Peck_GAM_415-8041.lib
+     Creating library E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-8041.lib and object E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-8041.exp
+  [10/12] Link UE4Editor-ComputeShader-8041.lib
+     Creating library E:\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-8041.lib and object E:\Peck_GAM_415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ComputeShader-8041.exp
+  [11/12] Link UE4Editor-RuntimeMeshComponent-8041.lib
+     Creating library E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-8041.lib and object E:\Peck_GAM_415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RuntimeMeshComponent-8041.exp
+  [12/12] Link UE4Editor-Peck_GAM_415-8041.dll
+     Creating library E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-8041.suppressed.lib and object E:\Peck_GAM_415\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Peck_GAM_415-8041.suppressed.exp
   Deploying Peck_GAM_415Editor Win64 Development...
-  Total build time: 7.27 seconds (Local executor: 2.12 seconds)
+  Total build time: 14.44 seconds (Local executor: 2.53 seconds)
