@@ -59,9 +59,23 @@ void APeck_GAM_415Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherA
 
 		DynamicDecal->SetVectorParameterValue("Color", FLinearColor::MakeRandomColor());
 
-		UGameplayStatics::SpawnDecalAtLocation(OtherActor, DynamicDecal, FVector(decalSize), Hit.Location, OtherActor->GetActorRotation(), lifespan);
+		//UGameplayStatics::SpawnDecalAtLocation(OtherActor, DynamicDecal, FVector(decalSize), Hit.Location, OtherActor->GetActorRotation(), lifespan);
 
-		
+		FVector UpVector = HitComp->GetUpVector();
+		FVector NormalVector = Hit.ImpactNormal;
+
+		FVector RotationAxis = FVector::CrossProduct(UpVector, NormalVector);
+		RotationAxis.Normalize();
+
+		float DotProduct = FVector::DotProduct(UpVector, NormalVector);
+		float RotationAngle = acosf(DotProduct);
+
+		FQuat Quat = FQuat(RotationAxis, RotationAngle);
+		FQuat CompQuat = RootComponent->GetComponentQuat();
+
+		FQuat NewQuat = Quat * CompQuat;
+
+		UGameplayStatics::SpawnDecalAttached(DynamicDecal, FVector(decalSize), HitComp, Hit.BoneName, Hit.Location, NewQuat.Rotator(), EAttachLocation::KeepRelativeOffset, lifespan);
 		Destroy();
 	}
 }
